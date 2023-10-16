@@ -22,7 +22,7 @@
   letter-spacing: 4px;
 }
 
-nav {
+.nav-list nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -56,7 +56,7 @@ nav {
 }
 
 
-section {
+.nav-list section {
   padding: 35px 20px;
 }
 
@@ -79,7 +79,7 @@ section {
   z-index: 777;
   content: '';
   position: absolute;
-  background: rgba(226, 251, 3, 0.3);
+  background: #33333348;
   width: 100%;
   height: 100%;
   top: 0;
@@ -121,6 +121,8 @@ section {
   font-weight: 500;
   text-decoration: none;
   border-radius: 15px;
+  border: 0;
+  cursor: pointer;
 
 }
 
@@ -265,14 +267,14 @@ section {
 
 .about {
   width: 100%;
-  height: 75vh;
+  height: 100%;
   display: flex;
   position: relative;
 }
 
 .about .about_main {
   display: flex;
-  align-items: center;
+  align-items: 0;
   justify-content: space-around;
 }
 
@@ -290,10 +292,10 @@ section {
 .row {
   display: flex;
   position: relative;
-  width: 90%;
+  width: 95%;
   height: 60%;
   margin-left: 4rem;
-  background-color: #f5f5f5;
+  background-color: #ccedfa;
   border-radius: 20px;
   justify-content: center;
   align-items: center;
@@ -339,11 +341,32 @@ section {
   margin-top: 30px;
 }
 
+/*empresas*/
+
+#circle-shape-example { 
+  font-family: Open Sans, sans-serif; 
+  margin: 2rem; 
+}
+#circle-shape-example p { 
+  line-height: 1.8; 
+}
+#circle-shape-example .curve { 
+  width: 33%; height: auto;
+  min-width: 150px;
+  float: left;
+  margin-right:2rem; 
+  border-radius: 50%;
+  -webkit-shape-outside:circle();
+  shape-outside:circle();
+}
+
 
 /*card*/
 main.cards {
   display: flex;
   padding: 32px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 main.cards section.card {
@@ -351,10 +374,10 @@ main.cards section.card {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background: white;
+  background: rgb(233, 233, 233);
   padding: 1rem 1.5rem;
   border-radius: 8px;
-  max-height: 468px;
+  max-height:  35%;
   margin-left: 32px;
 }
 
@@ -363,8 +386,8 @@ main.cards section.card:first-child {
 }
 
 main.cards section.card .icon {
-  width: 64px;
-  height: 64px;
+  width: 70px;
+  height: 70px;
 }
 
 main.cards section.card img {
@@ -373,14 +396,14 @@ main.cards section.card img {
 
 main.cards section.card h3 {
   font-size: 100%;
-  margin: 16px 0;
+  margin: 16px;
 }
 
 main.cards section.card span {
-  font-weight: 300;
-  max-width: 240px;
-  font-size: 80%;
-  margin-bottom: 16px;
+  font-weight: 500;
+  max-width: 300px;
+  font-size: 90%;
+  margin-bottom: 16px 0;
 }
 
 main.cards section.card button {
@@ -391,7 +414,7 @@ main.cards section.card button {
   cursor: pointer;
   font-size: 80%;
   font-weight: 500;
-  color: #fff;
+  color: #000000;
   margin-bottom: 16px 0;
 }
 
@@ -401,7 +424,7 @@ main.cards section.card.contact button {
 main.cards section.card.shop button {
   background: linear-gradient(to right, #3E8AFF, #BBDEFF);
 }
-main.cards section.card.about button {
+main.cards section.card.slim button {
   background: linear-gradient(to right, #FE5F8F, #FFC7D9);
 }
 
@@ -411,35 +434,13 @@ main.cards section.card.contact {
 main.cards section.card.shop {
   box-shadow: 20px 20px 50px -30px #AFD6FF;
 }
-main.cards section.card.about {
+main.cards section.card.slim {
   box-shadow: 20px 20px 50px -30px #FFC1D5;
 }
 
-@media screen and (max-width: 720px) {
-  main.cards {
-      flex-direction: column;
-  }
-
-  main.cards section.card {
-      margin-left: 0;
-      margin-bottom: 32px;
-  }
-
-  main.cards section.card:last-child {
-      margin-bottom: 0;
-  }
-
-  main.cards section.card button {
-      font-size: 70%;
-  }
-
-}
- 
-
-
 /*footer*/
 
-main {
+footer main {
    height: 80vh;
 }
 
@@ -686,4 +687,25 @@ footer {
     grid-template-columns: repeat(1, 1fr);
     padding: 3rem 2rem;
   }
+}
+
+/*funçoes*/
+@media screen and (max-width: 750px) {
+  main.cards {
+      flex-direction: column;
+  }
+
+  main.cards section.card {
+      margin-left: 0;
+      margin-bottom: 32px;
+  }
+
+  main.cards section.card:last-child {
+      margin-bottom: 0;
+  }
+
+  main.cards section.card button {
+      font-size: 70%;
+  }
+
 }
