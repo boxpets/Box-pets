@@ -53,7 +53,7 @@ nav {
   .mobile-menu div {
     width: 32px;
     height: 2px;
-    background: #9b2d2d;
+    background: #fff;
     margin: 8px;
     transition: 0.3s;
   }
