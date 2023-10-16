@@ -238,6 +238,7 @@ section {
   position: absolute;
   bottom: 50px;
   display: flex;
+  overflow: hidden;
 }
 
 .container .card .sci li {
@@ -264,8 +265,7 @@ section {
 
 .about {
   width: 100%;
-  height: 100vh;
-  padding: 10px 0;
+  height: 75vh;
   display: flex;
   position: relative;
 }
@@ -303,6 +303,7 @@ section {
 .about_text {
   width: 100%;
   height: 50%;
+  overflow: hidden;
 }
 
 .about_text h1 span {
