@@ -53,11 +53,10 @@ nav {
   .mobile-menu div {
     width: 32px;
     height: 2px;
-    background: #fff;
+    background: white;
     margin: 8px;
     transition: 0.3s;
   }
-  
   
   .nav-list section {
     padding: 35px 20px;
