@@ -1,11 +1,17 @@
 * {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
   text-decoration: none;
 }
+
 /*video*/
 
+body{
+  overflow-x: hidden;   
+}
+ul,li,h1,h2,h3,h4,h5,ol{
+  margin: 0;
+}
 
 .home {
   padding: 35px;
@@ -109,18 +115,17 @@
 
 /*card*/
 
-.container {
+.container-fluid {
   position: relative;
   z-index: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   margin: 40px 0;
   padding: 35px;
 }
 
-.container .card {
+.card {
   position: relative;
   width: 250px;
   height: 300px;
@@ -134,7 +139,7 @@
   backdrop-filter: blur(10px);
 }
 
-.container .card .content {
+.card .content {
   position: relative;
   display: flex;
   justify-content: center;
@@ -143,18 +148,18 @@
   transition: 0.5s;
 }
 
-.container .card:hover .content {
+.card:hover .content {
   transform: translateY(-20px);
 }
 
-.container .card .content .imgBx {
+.card .content .imgBx {
   position: relative;
   width: 150px;
   height: 150px;
   overflow: hidden;
 }
 
-.container .card .content .imgBx img {
+.card .content .imgBx img {
   position: absolute;
   top: 0;
   left: 0;
@@ -163,7 +168,7 @@
   object-fit: cover;
 }
 
-.container .card .content .contentBx h3 {
+.card .content .contentBx h3 {
   color: #000;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -174,20 +179,20 @@
   line-height: 1.1em;
 }
 
-.container .card .content .contentBx h3 span {
+.card .content .contentBx h3 span {
   font-size: 12px;
   font-weight: 300;
   text-transform: initial;
 }
 
-.container .card .sci {
+.card .sci {
   position: absolute;
   bottom: 50px;
   display: flex;
   overflow: hidden;
 }
 
-.container .card .sci li {
+.card .sci li {
   list-style: none;
   margin: 0 10px;
   transform: translateY(40px);
@@ -195,12 +200,12 @@
   opacity: 0;
 }
 
-.container .card:hover .sci li {
+.card:hover .sci li {
   transform: translateY(0px);
   opacity: 1;
 }
 
-.container .card .sci li a {
+.card .sci li a {
   color: #000;
   font-size: 10px;
 }
@@ -210,51 +215,51 @@
 /*barra das ongs*/
 
 .about {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   display: flex;
   position: relative;
+  
 }
 
 .about .about_main {
-  display: flex;
-  align-items: 0;
-  justify-content: space-around;
+    display: flex;
+    margin: 0 auto;
+    height: auto;
+    background-color: #ccedfa;
+    padding: 2.5rem;
+    border-radius: 15px;
+    max-width: 1200px;
 }
-
+.image{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .image img {
-  width: 70%;
-  margin-left: 30px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
 }
 
-.about .about_main image img {
-  width: 888px;
-  position: relative;
-  top: 60px;
-}
 
-.row {
+.about_content {
   display: flex;
-  position: relative;
-  width: 95%;
-  height: 60%;
-  margin-left: 4rem;
-  background-color: #ccedfa;
-  border-radius: 20px;
-  justify-content: center;
-  align-items: center;
-
+  flex-wrap: wrap;
 }
 
 .about_text {
   width: 100%;
-  height: 50%;
-  overflow: hidden;
+  max-width: 450px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about_text h1 span {
   color: #c41818;
-  margin-right: 15px;
   font-family: mv boli;
 }
 
@@ -265,24 +270,17 @@
 
 .about_text h3 {
   font-size: 30;
-  margin: 10px;
+
 }
 
 .about .about_main .about_text p {
-  width: 650px;
   text-align: justify;
-  margin-right: 30px;
-  line-height: 22px;
+
 }
 
 .about .about_btn {
   background: #c41818;
-  padding: 12px 25px;
-  text-decoration: none;
-  color: #fff;
-  position: relative;
-  left: 70%;
-  margin-top: 30px;
+  width: 100%;
 }
 
 /*empresas*/
@@ -309,14 +307,12 @@
 
 
 /*card*/
-main.cards {
+.cards {
   display: flex;
-  padding: 32px;
-  padding-left: 10%;
-  padding-right: 10%;
+
 }
 
-main.cards section.card {
+ .card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -324,36 +320,32 @@ main.cards section.card {
   background: rgb(233, 233, 233);
   padding: 1rem 1.5rem;
   border-radius: 8px;
-  max-height: 35%;
-  margin-left: 32px;
+    
 }
 
-main.cards section.card:first-child {
-  margin-left: 0;
-}
 
-main.cards section.card .icon {
+ .card .icon {
   width: 70px;
   height: 70px;
 }
 
-main.cards section.card img {
+ .card img {
   width: 100%;
 }
 
-main.cards section.card h3 {
+ .card h3 {
   font-size: 100%;
   margin: 16px;
 }
 
-main.cards section.card span {
+ .card span {
   font-weight: 500;
   max-width: 300px;
   font-size: 90%;
   margin-bottom: 16px 0;
 }
 
-main.cards section.card button {
+ .card button {
   padding: 0.5rem 1rem;
   text-transform: uppercase;
   border-radius: 32px;
@@ -365,27 +357,27 @@ main.cards section.card button {
   margin-bottom: 16px 0;
 }
 
-main.cards section.card.contact button {
+ .card.contact button {
   background: linear-gradient(to right, #9F66FF, #DFCBFF);
 }
 
-main.cards section.card.shop button {
+ .card.shop button {
   background: linear-gradient(to right, #3E8AFF, #BBDEFF);
 }
 
-main.cards section.card.slim button {
+ .card.slim button {
   background: linear-gradient(to right, #FE5F8F, #FFC7D9);
 }
 
-main.cards section.card.contact {
+ .card.contact {
   box-shadow: 20px 20px 50px -30px #DBC4FF;
 }
 
-main.cards section.card.shop {
+ .card.shop {
   box-shadow: 20px 20px 50px -30px #AFD6FF;
 }
 
-main.cards section.card.slim {
+ .card.slim {
   box-shadow: 20px 20px 50px -30px #FFC1D5;
 }
 

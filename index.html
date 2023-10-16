@@ -5,7 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>BoxPets</title>
-
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 		integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,7 +22,7 @@
 	<header>
 		<nav>
 			<a class="logo" href="#">BoxPets</a>
-			<div class="mobile-menu">
+			<div class="mobile-menu" data-bs-toggle="offcanvas" href="#menu" role="button" aria-controls="offcanvasExample">
 				<div class="line1"></div>
 				<div class="line2"></div>
 				<div class="line3"></div>
@@ -35,6 +36,9 @@
 			</ul>
 		</nav>
 	</header>
+	<main>
+
+	
 	<section class=" home">
 		<div class="video-main">
 			<video class="video" src="src/video.mp4" autoplay muted loop></video>
@@ -57,7 +61,7 @@
 	</section>
 
 	<section>
-		<div class="container">
+		<div class="container-fluid">
 			<div class="card">
 				<div class="content">
 					<div class="imgBx">
@@ -167,13 +171,13 @@
 	</section>
 
 	<!-- about -->
-	<section>
-		<div class="about" id="about">
-			<div class="about_main">
-				<div class="row">
-					<div class="image">
-						<img src="src/gatinhos.jpg">
-					</div>
+	<section class="about" id="about">
+
+		<div class="about_main">
+			<div class="about_content">
+				<div class="image">
+					<img src="src/gatinhos.jpg">
+
 					<div class="about_text">
 						<h1><span>Adota</span>Pet</h1>
 						<h3>com todo o amor para vcocê</h3>
@@ -183,65 +187,68 @@
 							industry's standard dummy text ever since the 1500s, when an unknown printer took
 							a galley of type and scrambled it to make a type specimen book.
 						</p>
-						<a href="#" class="about_btn">Veja</a>
+						<a href="#" class="about_btn btn text-light">Veja</a>
 					</div>
 				</div>
-			</div>
+
 	</section>
 
 	<!--empresas-->
 	<div id="circle-shape-example">
-		<img src="src/CRECHE.png" alt="A photograph of sliced kiwifruit on a while plate" class="curve"><h1>KiwiFruit</h1>
-	  
-		<p>This is kiwifruit: originally called “yang tao”, “melonette” or Chinese gooseberry.
-			 Cultivated in its fuzzy variety from Chinese imports, the fruit proved popular with
-			  American military servicemen stationed in New Zealand during World War II, with 
-			  commercial export to the United States starting after the end of the war. 
-			  In California, the fruit was rebranded as “kiwifruit” due to its resemblance to New
-			   Zealand national bird. However, it is not a “kiwi”, which is also the demonym for 
-			   native New Zealanders. Saying “Im going to eat a kiwi” implies that you are either a 
-			   cannibal or planning to dine on an endangered flightless bird.
-	  </div>
+		<img src="src/CRECHE.png" alt="A photograph of sliced kiwifruit on a while plate" class="curve">
+		<h1>KiwiFruit</h1>
 
-		
+		<p>This is kiwifruit: originally called “yang tao”, “melonette” or Chinese gooseberry.
+			Cultivated in its fuzzy variety from Chinese imports, the fruit proved popular with
+			American military servicemen stationed in New Zealand during World War II, with
+			commercial export to the United States starting after the end of the war.
+			In California, the fruit was rebranded as “kiwifruit” due to its resemblance to New
+			Zealand national bird. However, it is not a “kiwi”, which is also the demonym for
+			native New Zealanders. Saying “Im going to eat a kiwi” implies that you are either a
+			cannibal or planning to dine on an endangered flightless bird.
+	</div>
+
+
 
 
 
 	<!--card-->
 
-	<main class="cards">
+	<section class="cards my-5">
+		<div class="row align-items-center">
 
-		<section class="card contact">
-			<div class="icon">
-				<img src="src/tipos.png" alt="Contact us.">
+
+			<div class="card contact">
+				<div class="icon">
+					<img src="src/tipos.png" alt="Contact us.">
+				</div>
+				<h3>Agenda virtual.</h3>
+				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+				<button>Learn More</button>
 			</div>
-			<h3>Agenda virtual.</h3>
-			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-			<button>Learn More</button>
-		</section>
 
-		<section class="card shop">
-			<div class="icon">
-				<img src="src/tipos.png" alt="Shop here.">
+			<div class="card shop">
+				<div class="icon">
+					<img src="src/tipos.png" alt="Shop here.">
+				</div>
+				<h3>Carterinha pet.</h3>
+				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+				<button>Learn More</button>
 			</div>
-			<h3>Carterinha pet.</h3>
-			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-			<button>Learn More</button>
-		</section>
 
-		<section class="card slim">
-			<div class="icon">
-				<img src="src/tipos.png" alt="Shop here.">
+			<div class="card slim">
+				<div class="icon">
+					<img src="src/tipos.png" alt="Shop here.">
+				</div>
+				<h3>Carterinha pet.</h3>
+				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+				<button>Learn More</button>
 			</div>
-			<h3>Carterinha pet.</h3>
-			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-			<button>Learn More</button>
-		</section>
-
-	</main>
+		</div>
+	</section>
 
 	<!--footer-->
-
+</main>
 	<footer>
 
 		<div id="footer_content">
@@ -312,7 +319,9 @@
 				2023 all rights reserve</p>
 
 	</footer>
-
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
 	<script src="js/mobile-navbar.js"></script>
 	<script src="js/empresas.js"></script>
 
