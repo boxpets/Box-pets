@@ -134,18 +134,24 @@ a{
 
 /*fim do comentarios*/
 
-
+.subpe{
+    display: flex;
+}
 /*maps*/
-
-.tamanho-maps{
-    width: 100%;
+.maps{
+    padding: 5%;
 }
 
 /*fim do maps*/
 
 /*fim do maps*/
 .form {
+padding: 10%;
+    width: 50%;
+}
 
-    display: flex;
+.form .title  {
+    background-color: #000000;
+    z-index: 888;
 }
 /*fim do maps*/
