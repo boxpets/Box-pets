@@ -7,23 +7,15 @@
 
   /*style do cards*/
 
-  .grupo{
-    
-    padding: 0;
-    margin: 10%;
+  .card-group{
+   height: 100%;
+    margin: 7%;
 
   }
-
-  .carta {
-    height: 100%;
-    background-color: #f9d71c;
-  }
-
-
   /*fim do style do cards*/
 
 /*comentarios*/
-a{
+#testimonials a{
     text-decoration: none;
 }
 
@@ -144,14 +136,12 @@ a{
 
 /*fim do maps*/
 
-/*fim do maps*/
+/*form*/
 .form {
-padding: 10%;
-    width: 50%;
+  width: 10%;
 }
-
 .form .title  {
     background-color: #000000;
     z-index: 888;
 }
-/*fim do maps*/
+/*fim do form */
