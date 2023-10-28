@@ -181,7 +181,39 @@
 	</section>
 
 	<!-- about -->
-	<section class="about" id="about">
+
+	<div class="p-5 text-center bg-body-tertiary rounded-3" ><!--nao reconhece o style-->
+
+		<svg class="bi mt-4 mb-3" style="color: var(--bs-indigo);" width="100" height="100">
+		<use xlink:href="#bootstrap"></use><!--logo-->
+		</svg>
+		<h1 class="text-body-emphasis">Jumbotron with icon</h1><!--Titulo-->
+		<p class="col-lg-8 mx-auto fs-5 text-muted">
+		
+		" This is a custom jumbotron featuring an SVG image at the top, some longer text that wraps early thanks to a responsive 
+		class, and a customized call to action." <!--texto-->
+		
+		</p>
+		<!--btn1-->
+		<div class="d-inline-flex gap-2 mb-5">
+		<button class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" type="button">
+		 Call to action 
+		<svg class="bi ms-2" width="24" height="24">
+		<use xlink:href="#arrow-right-short"></use>
+		</svg>
+		</button>
+		<!--fim btn1-->
+		<button class="btn btn-outline-secondary btn-lg px-4 rounded-pill" type="button"> Secondary link </button>
+		</div>
+		</div>
+		
+			</div>
+		
+
+
+
+
+	<!--<section class="about" id="about">
 
 		<div class="about_main">
 			<div class="about_content">
@@ -201,49 +233,103 @@
 					</div>
 				</div>
 
-	</section>
+	</section>-->
 
 	<!--empresas-->
-	<canvas class="orb-canvas"></canvas>
-<!-- Overlay -->
-<div class="overlay">
-  <!-- Overlay inner wrapper -->
-  <div class="overlay__inner">
-    <!-- Title -->
-    <h1 class="overlay__title">
-      Seja um parceiro da Boxpet,
-      <span class="text-gradient">investimenta</span> no seu negocio
-    </h1>
-    <!-- Description -->
-    <p class="overlay__description">
-     Aqui na Boxpet damos a oportunidade para que sua empresa possa crescer com a gente,
-     seja ela grande ou pequena, terá um lugar especial na Boxpet.
-      <strong>Venha fazer parte você também.</strong>
-    </p>
-    <!-- Buttons -->
-    <div class="overlay__btns">
+	<div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="https://images.unsplash.com/photo-1530435460869-d13625c69bbf?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MTB8fHdlYnNpdGV8ZW58MHwwfHx8MTYyMTQ0NjkyNg&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=768" class="d-block mx-lg-auto img-fluid" alt="" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <div class="lc-block mb-3">
+                    <div editable="rich">
+                        <h2 class="fw-bold display-5">Sua Empresa na BoxPet.</h2>
+                    </div>
+                </div>
 
-      <button class="overlay__btn overlay__btn--transparent">
-        <a href="" target="_blank">
+                <div class="lc-block mb-3">
+                    <div editable="rich">
+                        <p class="lead">Coloque sua empresa na Boxpet, apresente seus serviços para o seu publico alvo e vista no seu negocio. Um ambiente só para seu investimento.
+                        </p>
+                    </div>
+                </div>
 
-          Saiba mais
-        </a>
-      </button>
+                <div class="lc-block d-grid gap-2 d-md-flex justify-content-md-start"><a class="btn btn-primary px-4 me-md-2" href="#" role="button">Saiba mais</a>
+                    <a class="btn btn-outline-secondary px-4" href="#" role="button">Cadastre como Empresa</a>
+                </div>
 
-      <button class="overlay__btn overlay__btn--colors">
-        <span>Entrar como empresa </span>
-        <span class="overlay__btn-emoji">🎨</span>
-      </button>
+            </div>
+        </div>
     </div>
-  </div>
+
+
+	<!--card-->
+	<div class="container py-4">
+	<div class="row">
+	  
+	<div class="row mt-4">
+		<div class="text-center col-md-6 py-5 bg-light text-dark">
+			<div class="lc-block">
+				<div editable="rich">
+
+					<h2><strong>Carterinha Pet</strong></h2>
+
+				 
+				</div>
+			</div>
+			<div class="lc-block">
+				<div editable="rich">
+
+					<h2 class="display-3">IMG</h2>
+					<p>month</p>
+				</div>
+			</div>
+			<div class="lc-block px-4 mb-4">
+				<div editable="rich">
+
+					<p>&nbsp;Aenean vel nisi in ipsum congue fermentum et ut arcu. Proin leo diam,
+						vulputate eu tellus ac, mattis cursus nunc.</p>
+				</div>
+			</div>
+			<div class="lc-block">
+				<a class="btn btn-outline-primary" href="#" role="button">Buy Now</a>
+			</div><!-- /lc-block -->
+		</div><!-- /col -->
+		<div class="text-center col-md-6 py-5 shadow-lg">
+			<div class="lc-block">
+				<div editable="rich">
+
+					<h2><strong>Agenda Virtual</strong></h2>
+
+				
+				</div>
+			</div>
+			<div class="lc-block">
+				<div editable="rich">
+
+					<h2 class="display-3">IMG</h2>
+					<p>month</p>
+				</div>
+			</div>
+			<div class="lc-block px-4 mb-4">
+				<div editable="rich">
+
+					<p>&nbsp;Aenean vel nisi in ipsum congue fermentum et ut arcu. Proin leo diam,
+						vulputate eu tellus ac, mattis cursus nunc.</p>
+				</div>
+			</div>
+			<div class="lc-block">
+				<a class="btn btn-outline-primary" href="#" role="button">Buy Now</a>
+			</div><!-- /lc-block -->
+		</div><!-- /col -->
+	</div>
 </div>
 
 
 
 
-	<!--card-->
-
-	<section class="cards my-5">
+	<!--<section class="cards my-5">
 		<div class="row align-items-center">
 
 
@@ -265,15 +351,8 @@
 				<button>Learn More</button>
 			</div>
 
-			<div class="card slim">
-				<div class="icon">
-					<img src="src/tipos.png" alt="Shop here.">
-				</div>
-				<h3>Carterinha pet.</h3>
-				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-				<button>Learn More</button>
-			</div>
-		</div>
+			
+		</div>-->
 	</section>
 
 	<!--footer-->
@@ -352,7 +431,6 @@
 		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
 		crossorigin="anonymous"></script>
 	<script src="js/mobile-navbar.js"></script>
-	<script src="js/empresas.js"></script>
 
 </body>
 

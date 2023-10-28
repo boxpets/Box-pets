@@ -128,4 +128,49 @@ footer main {
   
   
   }
+
   
+  
+@media screen and (max-width: 768px) {
+    #footer_content {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+  }
+  
+  @media screen and (min-width:320px) and (max-width: 769px) {
+  
+    .about_main {
+      width: 100%;
+      height: 100%;
+  
+    }
+  
+    .row {
+      transition: all .40s;
+      display: flex;
+      position: relative;
+      width: 100%;
+      height: 70%;
+      margin-left: 1rem;
+      justify-content: center;
+    }
+  
+    .row img {
+      width: 100%;
+      height: auto;
+      transition: all .40s;
+    }
+  
+    .row img:hover {
+      transform: scale(0.9);
+    }
+  
+  
+  
+  
+    #footer_content {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 3rem 2rem;
+    }
+  }
