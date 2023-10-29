@@ -266,12 +266,14 @@
   </section>
   <!--fim de comentario-->
 
+ 
+      <!--maps-->
   <div class="subpe">
     <!--maps-->
     <div class="maps">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29265.466186122372!2d-46.88551734753417!3d-23.52590975906644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1697601337890!5m2!1spt-BR!2sbr"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        width="700" height="450" style="border:0; padding: 2%;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade">
       </iframe>
     </div>
@@ -282,15 +284,80 @@
 
 
     <!--fim do form-->
-    <div class="mb-3 form">
-      <label for="exampleFormControlInput1" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-    </div>
-    <div class="mb-3">
-      <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
+    <div class="form-body">
+      <div class="row">
+          <div class="form-holder">
+              <div class="form-content">
+                  <div class="form-items">
+                      <h3>Register Today</h3>
+                      <p>Fill in the data below.</p>
+                      <form class="requires-validation" novalidate>
+
+                          <div class="col-md-12">
+                             <input class="form-control" type="text" name="name" placeholder="Full Name" required>
+                             <div class="valid-feedback">Username field is valid!</div>
+                             <div class="invalid-feedback">Username field cannot be blank!</div>
+                          </div>
+
+                          <div class="col-md-12">
+                              <input class="form-control" type="email" name="email" placeholder="E-mail Address" required>
+                               <div class="valid-feedback">Email field is valid!</div>
+                               <div class="invalid-feedback">Email field cannot be blank!</div>
+                          </div>
+
+                         <div class="col-md-12">
+                              <select class="form-select mt-3" required>
+                                    <option selected disabled value="">Position</option>
+                                    <option value="jweb">Junior Web Developer</option>
+                                    <option value="sweb">Senior Web Developer</option>
+                                    <option value="pmanager">Project Manager</option>
+                             </select>
+                              <div class="valid-feedback">You selected a position!</div>
+                              <div class="invalid-feedback">Please select a position!</div>
+                         </div>
+
+
+                         <div class="col-md-12">
+                            <input class="form-control" type="password" name="password" placeholder="Password" required>
+                             <div class="valid-feedback">Password field is valid!</div>
+                             <div class="invalid-feedback">Password field cannot be blank!</div>
+                         </div>
+
+
+                         <div class="col-md-12 mt-3">
+                          <label class="mb-3 mr-1" for="gender">Gender: </label>
+
+                          <input type="radio" class="btn-check" name="gender" id="male" autocomplete="off" required>
+                          <label class="btn btn-sm btn-outline-secondary" for="male">Male</label>
+
+                          <input type="radio" class="btn-check" name="gender" id="female" autocomplete="off" required>
+                          <label class="btn btn-sm btn-outline-secondary" for="female">Female</label>
+
+                          <input type="radio" class="btn-check" name="gender" id="secret" autocomplete="off" required>
+                          <label class="btn btn-sm btn-outline-secondary" for="secret">Secret</label>
+                             <div class="valid-feedback mv-up">You selected a gender!</div>
+                              <div class="invalid-feedback mv-up">Please select a gender!</div>
+                          </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label">I confirm that all data are correct</label>
+                       <div class="invalid-feedback">Please confirm that the entered data are all correct!</div>
+                      </div>
+                
+
+                          <div class="form-button mt-3">
+                              <button id="submit" type="submit" class="btn btn-primary">Register</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
   </div>
+</div>
+
+
 
 
   <!-- footer-->
@@ -359,7 +426,7 @@
             <i class="fa-regular fa-envelope"></i>
           </button>
         </div>
-      </div>
+     
 
       <p>&#169
         2023 all rights reserve</p>
