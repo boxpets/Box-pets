@@ -20,14 +20,20 @@
 
 
 /*serviços*/
-.container-fluid {
-    width: 70%; 
-    display: flex;
-    margin: 40px 0;
-    padding: 35px;
-    margin-left: 10%;
-    overflow: auto;
-    margin-right: 10%;
+.container-fluid { 
+       display: flex;
+       padding: 35px;
+       margin-left: 0%;
+       overflow: auto;
+       justify-content: center;
+  }
+
+
+  @media screen and (max-width: 1570px) {
+    .container-fluid{
+      justify-content: normal;
+    }
+    
   }
   .container-fluid ::-webkit-scrollbar{
     width: 0;
