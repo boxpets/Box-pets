@@ -11,7 +11,7 @@ aside{
     width: fit-content;
     max-width: 65px;
     height: 100%;
-    z-index: 200%;
+    z-index: 1;
 }
 nav.menu-lateral {
     height: 100%;
