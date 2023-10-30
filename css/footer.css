@@ -20,6 +20,7 @@ footer main {
     grid-template-columns: repeat(4, 1fr);
     padding: 3rem 3.5rem;
     width: 100%;
+     margin-left: 2rem;
   }
   
   #footer_contacts h1 {
@@ -136,6 +137,8 @@ footer main {
     #footer_content {
       grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
+      margin-left: 0;
+      margin-bottom: 2rem;
     }
   }
   
