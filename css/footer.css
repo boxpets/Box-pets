@@ -5,6 +5,7 @@ footer main {
   footer {
     width: 100%;
     color: #fff;
+    z-index: 200%;
   }
   
   

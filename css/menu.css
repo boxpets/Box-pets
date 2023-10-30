@@ -5,15 +5,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    height: 100vh;
-}
 aside{
     position: fixed;
     left: 0;
     width: fit-content;
     max-width: 65px;
     height: 100%;
+    z-index: 200%;
 }
 nav.menu-lateral {
     height: 100%;
@@ -21,6 +19,7 @@ nav.menu-lateral {
     border-right: 3px solid #6092ff;
     overflow: hidden;
     transition: .5s;
+    
 }
 
 nav.menu-lateral.expandir {
