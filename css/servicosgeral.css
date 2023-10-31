@@ -2,10 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 .agenda-content {
     display: flex;
+
 }
 
 
@@ -13,35 +15,27 @@
     margin: 10%;
 }
 
-.container {
-    width: 80%;
+.container{
     background-color: #d1d1d1;
-    min-height: 400px;
-    height: auto;
-    padding: 2rem;
-    margin: 5% auto auto;
-   
-
-
-
-   /* width: 100%;
-    max-width: 1000px;
-    position: absolute;
-    left: 50%;
-    top: 40%;
-    transform: translate(-50%, -50%);
-    height: auto;
-    min-height: 400px;
-    box-shadow: 1px 1px 5px black;
-    padding: 2rem;
-    background-color: beige;*/
+    height: 84vh;
 }
 
-.left , .right{
+.servico-geral .container {
+    width: 80%;
+    background-color: #6d6d6d;
+    min-height: 400px;
+    height: 60vh;
+    padding: 2rem;
+    margin: 5% auto auto;
+}
+
+.left,
+.right {
     width: 100%;
     height: 100%;
-    
-
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
 }
 
 .left {
@@ -83,8 +77,9 @@
 
 .left .buttons .Historico:hover {
     transform: translateY(0px);
-    background-color:rgb(42, 130, 165);
+    background-color: rgb(42, 130, 165);
 }
+
 /*fim dos buttond*/
 /*texto*/
 .left p {
@@ -94,18 +89,17 @@
 .right .cards {
     grid-template-columns: repeat(2, auto);
     display: grid;
-    margin-top: 3%;
-    gap: 6%;
+    gap: 2%;
     justify-content: center;
     width: 95%;
 }
 
-.right h2{
+.right h2 {
     display: grid;
     justify-content: space-around;
 }
 
-.right .minicards  .title{
+.right .minicards .title {
     width: 0;
     margin: 2%;
 }
@@ -113,18 +107,168 @@
 .right .minicards {
     background-color: #fafafa;
     width: 100%;
-    height: 80px;
+    height: 120px;
     display: flex;
     border-radius: 20px;
     margin: 5%;
-  
+
 }
+
 .right .minicards img {
-    width: 100px;
+    width: 50%;
 }
 
 .right .cards .minicards p {
     margin-top: 10%;
-   
-    
+    display: flex;
+    align-items: center;
+
+}
+
+
+@media screen and (min-width: 720px) and (max-width: 999px) {
+    .agenda-content {
+        display: flex;
+        flex-direction: column;
+        border-radius: 15%;
+    }
+
+    .servico-geral .container {
+        width: 80%;
+        background-color: #d1d1d1;
+        min-height: 400px;
+        height: 120vh;
+        padding: 2rem;
+        margin: 5% auto auto;
+    }
+
+    .left {
+        box-shadow: black 1px 0px 5px;
+        height: 400px;
+        border-radius: 10px;
+        background-color: #fafafa;
+        width: 92%;
+        margin-left: 3%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 719px) {
+    .agenda-content {
+        display: flex;
+        flex-direction: column;
+        border-radius: 15%;
+    }
+
+    .servico-geral .container {
+        background-color: #b5b5b5;
+        height: 166vh;
+        display: flex;
+        padding: 20px;
+        border-radius: 20px;
+        width: 100vh;
+    }
+
+    .right .cards .minicards p {
+        margin-top: 10%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .left {
+        box-shadow: black 1px 0px 5px;
+        height: 400px;
+        border-radius: 10px;
+        background-color: #fafafa;
+        width: 92%;
+        margin-left: 3%;
+    }
+
+    .right h2 {
+        padding: 35px;
+    }
+
+    .right .minicards {
+        width: 100%;
+        height: 120px;
+    }
+
+    .right .cards {
+        grid-template-columns: repeat(1, auto);
+        display: grid;
+        gap: 2%;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .container {
+        height: 200vh;
+        background-color: #c7c7c7;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+    .agenda-content {
+        display: flex;
+        flex-direction: column;
+        border-radius: 15%;
+        margin-top: 3%;
+    }
+
+    .servico-geral .container {
+        background-color: #b5b5b5;
+        height: 166vh;
+        display: flex;
+        padding: 20px;
+        border-radius: 20px;
+        width: 100vh;
+    }
+
+    .right .cards .minicards p {
+        margin-top: 10%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .left {
+        box-shadow: black 1px 0px 5px;
+        height: 400px;
+        border-radius: 10px;
+        background-color: #fafafa;
+        width: 92%;
+        margin-left: 3%;
+        margin-top: 15%;
+    }
+
+    .right h2 {
+        padding: 35px;
+    }
+
+    .right .minicards {
+        width: 100%;
+        height: 120px;
+        margin-left: 2px;
+    }
+
+    .right .cards {
+        grid-template-columns: repeat(1, auto);
+        display: grid;
+        gap: 2%;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .container {
+        padding: 0;
+        width: 100%;
+        height: 250vh;
+        background-color: #c7c7c7;
+        border: 25px;
+    }
+
+    .servicogeral {
+        margin: 0;
+    }
+
 }
