@@ -36,6 +36,10 @@ nav {
     letter-spacing: 4px;
     text-decoration: none;
   }
+
+  .logo img{
+    width: 20%;
+  }
   
   .nav-list nav {
     display: flex;

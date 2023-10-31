@@ -15,9 +15,10 @@
     margin: 10%;
 }
 
-.container{
+.container {
     background-color: #d1d1d1;
-    height: 84vh;
+    height: 128vh;
+    border-radius: 25px;
 }
 
 .servico-geral .container {
