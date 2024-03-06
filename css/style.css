@@ -212,180 +212,162 @@ ul,li,h1,h2,h3,h4,h5,ol{
 }
 
 
-
-
-/*barra das ongs*/
-
-.p-5{
-  color: #9F66FF;
+.wrapper {
+  padding: 10px 10%;
+}
+#card-area{
+  padding: 50px 0;
+}
+.box-area{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
 }
 
-/*.about {
-  width: 100vw;
-  height: 100%;
-  display: flex;
+.box{
+  border-radius: 10px;
   position: relative;
+  overflow: hidden;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+
+}
+.box img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.overlay{
+  height: 0;
+  width: 100%;
+  background: linear-gradient(transparent, #b5e8ff 58%);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+
+.overlay h3{
+  font-weight: 500;
+  margin-bottom: 5px;
+  margin-top: 80%;
+  font-family: bebas neue;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.overlay a {
+  margin-top: 10px;
+  color: #222222;
+  text-decoration: none;
+  font-size: 14px;
+  background: #fff;
+  border-radius: 50px;
+  text-align: center;
+  padding: 5px 15px;
+
+}
+
+.boxLhover img {
+  transform: scale(1.2);
+}
+
+.box:hover .overlay{
+  height: 100%;
+}
+
+
+
+/*empresa*/
+.quality{
+  background-color: #fff;
+}
+
+.quality_content{
+  row-gap: 2.5rem;
+}
+
+.quality_images{
+  position: relative;
+  justify-self: center;
+}
+
+.quality_img-big, 
+.quality_img-small{
+  border-radius: .5rem;
+} 
+
+.quality_img-big{
+  width: 280px;
+}
+
+.quality_img-small{
+  width: 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  transform: translateX(-5rem);
+}
+
+.quality_title, .quality_price {
+  font-size: #0000;
+} 
+
+.quality_title{
+  margin-bottom: .75rem;
+}
+
+.quality_price{
+  margin-bottom: .25rem;
+}
+.quality_descricao {
+  display: block;
+  font-size: #fa1919;
+  margin-bottom: .75rem;
+}
+
+.quality_text{
+  margin-bottom: 2.5rem;
+}
+
+.quality_buttons {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
   
 }
 
-.about .about_main {
-    display: flex;
-    margin: 0 auto;
-    height: auto;
-    background-color: #ccedfa;
-    padding: 2.5rem;
-    border-radius: 15px;
-    max-width: 1200px;
-}
-.image{
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.image img {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 15px;
-}
-
-
-.about_content {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.about_text {
-  width: 100%;
-  max-width: 450px;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.about_text h1 span {
-  color: #c41818;
-  font-family: mv boli;
-}
-
-.about_text h1 {
-  font-size: 55px;
-  position: relative;
-}
-
-.about_text h3 {
-  font-size: 30;
-
-}
-
-.about .about_main .about_text p {
-  text-align: justify;
-
-}
-
-.about .about_btn {
-  background: #c41818;
-  width: 100%;
-}*/
-
-/*empresas
-
-#circle-shape-example {
-  font-family: Open Sans, sans-serif;
-  margin: 2rem;
-}
-
-#circle-shape-example p {
-  line-height: 1.8;
-}
-
-#circle-shape-example .curve {
-  width: 33%;
-  height: auto;
-  min-width: 150px;
-  float: left;
-  margin-right: 2rem;
-  border-radius: 50%;
-  -webkit-shape-outside: circle();
-  shape-outside: circle();
-}*/
-
-
-/*card*/
-.cards {
-  display: flex;
-
-}
-
- .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background: rgb(233, 233, 233);
-  padding: 1rem 1.5rem;
-  border-radius: 8px;
-    
-}
-
-
- .card .icon {
-  width: 70px;
-  height: 70px;
-}
-
- .card img {
-  width: 100%;
-}
-
- .card h3 {
-  font-size: 100%;
-  margin: 16px;
-}
-
- .card span {
-  font-weight: 500;
-  max-width: 300px;
-  font-size: 90%;
-  margin-bottom: 16px 0;
-}
-
- .card button {
-  padding: 0.5rem 1rem;
+.quality_buttons button {
+  font-size: #1a489c;
   text-transform: uppercase;
-  border-radius: 32px;
-  border: 0;
-  cursor: pointer;
-  font-size: 80%;
-  font-weight: 500;
-  color: #000000;
-  margin-bottom: 16px 0;
+  color: #aa1772;
+  display: inline-flex;
+  align-items: center;
+  column-gap: .75rem;
 }
 
- .card.contact button {
-  background: linear-gradient(to right, #9F66FF, #DFCBFF);
+.quality_button i{
+  font-size: 1.25rem;
+  transition: .4s;
+
 }
 
- .card.shop button {
-  background: linear-gradient(to right, #3E8AFF, #BBDEFF);
+.quality_button:hover i{
+transform: translateX(.25rem);
 }
 
- .card.slim button {
-  background: linear-gradient(to right, #FE5F8F, #FFC7D9);
-}
-
- .card.contact {
-  box-shadow: 20px 20px 50px -30px #DBC4FF;
-}
-
- .card.shop {
-  box-shadow: 20px 20px 50px -30px #AFD6FF;
-}
-
- .card.slim {
-  box-shadow: 20px 20px 50px -30px #FFC1D5;
-}
 
 /*footer*/
 
